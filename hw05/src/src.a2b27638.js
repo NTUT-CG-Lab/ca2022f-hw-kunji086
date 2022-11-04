@@ -97426,7 +97426,7 @@ class Camera {
       view.angleY = (faces[0].keypoints[168].y-250)/100*30*(-1);
 
       /*歪頭*/
-      view.angleZ = ( (faces[0].keypoints[10].x - faces[0].keypoints[152].x) / 5 );
+      view.angleZ = ( (faces[0].keypoints[152].x - faces[0].keypoints[10].x) / 5 );
 
       /*眼睛控制*/
       if((faces[0].keypoints[145].y)-(faces[0].keypoints[159].y) < 4){
